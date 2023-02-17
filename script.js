@@ -25,10 +25,25 @@ function filterDogOwers(personsList) {
     let dogOwner = personsList[i];
 
     if (dogOwner.hasDog == true) {
-      console.log(dogOwner.name);
+      console.log(dogOwner);
     } else {
     }
   }
 }
 
 filterDogOwers(users);
+
+console.log("--------------------------------------");
+
+function filterAdults(personsList) {
+  for (let i = 0; i < personsList.length; i++) {
+    let adult = personsList[i];
+
+    if (adult.age >= 18) {
+      console.log(adult);
+    } else {
+    }
+  }
+}
+
+filterAdults(users);
